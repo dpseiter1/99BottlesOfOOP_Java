@@ -17,7 +17,7 @@ public class Bottles {
     }
 
     public String verse(int number) {
-		return new BottleVerse(number).verse(number);
+		return new BottleVerse(number).verse();
 
     }    
 }
