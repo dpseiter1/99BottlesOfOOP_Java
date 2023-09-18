@@ -17,26 +17,7 @@ public class Bottles {
     }
 
     public String verse(int number) {
-    	// if (99BottlesSong){
-    	BottleNumber bottleNumber = BottleNumber.For(number);
-    	
-                return capitalize(bottleNumber.toString()) + " of beer on the wall, " +
-                		bottleNumber.toString() + " of beer.\n" +
-                		bottleNumber.action() +
-                		bottleNumber.successor().toString() + " of beer on the wall.\n";
-	    // } else if (unknownSong2Verse) {
-	    // ...
-	    // assemble verse for unknown song 2
-	    // ...
-	    // } else if (unknownSong3Verse {
-	    // ...
-	    // assemble verse for unknown song 3
-	    // ...
-	    // }
-    }
-    
-    public String capitalize(String phrase) {
-    	return phrase.substring(0,1).toUpperCase() + phrase.substring(1);
-    }
-    
+		return new BottleVerse(number).verse(number);
+
+    }    
 }
