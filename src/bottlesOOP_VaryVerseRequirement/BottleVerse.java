@@ -1,7 +1,7 @@
 package bottlesOOP_VaryVerseRequirement;
 
 public class BottleVerse {
-	int number;
+	private int number;
 	
 	public BottleVerse(int number) {
 		this.number = number;
