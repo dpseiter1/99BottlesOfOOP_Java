@@ -7,10 +7,11 @@ package bottlesOOP_VaryVerseRequirement;
  *
  */
 public class BottleNumber {
-	protected int number;
+	int number;
 	
 	public BottleNumber(int number){
 		this.number = number;
+
 	}
 	
     public BottleNumber successor() {

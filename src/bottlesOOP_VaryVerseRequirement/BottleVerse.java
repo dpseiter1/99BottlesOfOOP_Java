@@ -1,9 +1,14 @@
 package bottlesOOP_VaryVerseRequirement;
 
-public class BottleVerse {
+public class BottleVerse implements VerseTemplate {
 	private int number;
 	
 	public BottleVerse(int number) {
+//		super(number);
+		this.number = number;
+	}
+	
+	public void setNumber(int number) {
 		this.number = number;
 	}
 	
