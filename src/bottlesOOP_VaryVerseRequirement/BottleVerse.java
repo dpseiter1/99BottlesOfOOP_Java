@@ -12,13 +12,17 @@ public class BottleVerse implements VerseTemplate {
 		this.number = number;
 	}
 	
-	public String verse() {
+	public String lyrics() {
     	BottleNumber bottleNumber = BottleNumber.For(this.number);
     	
         return capitalize(bottleNumber.toString()) + " of beer on the wall, " +
         		bottleNumber.toString() + " of beer.\n" +
         		bottleNumber.action() +
         		bottleNumber.successor().toString() + " of beer on the wall.\n";
+	}
+	
+	public static String lyrics(int number) {
+		return new BottleVerse(number).lyrics();
 	}
 	
     private String capitalize(String phrase) {

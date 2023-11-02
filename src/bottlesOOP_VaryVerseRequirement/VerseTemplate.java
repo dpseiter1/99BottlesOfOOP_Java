@@ -5,5 +5,5 @@ public interface VerseTemplate {
 	
 	public void setNumber(int number);
 	
-	public String verse();
+	public String lyrics();
 }
