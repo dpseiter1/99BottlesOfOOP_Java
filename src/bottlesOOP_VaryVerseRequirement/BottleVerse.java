@@ -4,7 +4,6 @@ public class BottleVerse implements VerseTemplate {
 	private int number;
 	
 	public BottleVerse(int number) {
-//		super(number);
 		this.number = number;
 	}
 	
@@ -21,7 +20,7 @@ public class BottleVerse implements VerseTemplate {
         		bottleNumber.successor().toString() + " of beer on the wall.\n";
 	}
 	
-	public static String lyrics(int number) {
+	public String lyrics(int number) {
 		return new BottleVerse(number).lyrics();
 	}
 	

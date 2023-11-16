@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Ignore;
 
 public class BottlesTest {
-	
+
 		@Test
 	    public void testVerse99() {
 	        String expected = "99 bottles of beer on the wall, " +
@@ -398,5 +398,15 @@ public class BottlesTest {
 	        assertEquals(expected, new Bottles().song());
 
 	    					
-}
+	    }
+	    private class testBottleVerse() {
+	    	@Test
+	    	public void firstVerse() {
+	            String expected = "99 bottles of beer on the wall, " +
+	                    "99 bottles of beer.\n" +
+	                    "Take one down and pass it around, " +
+	                    "98 bottles of beer on the wall.\n";
+	            assertEquals(expected, new Bottles().verse(99));
+	    	}
+	    }
 }

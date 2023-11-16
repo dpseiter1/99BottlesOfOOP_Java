@@ -26,8 +26,6 @@ public class Bottles {
     }
 
     public String verse(int number) {
-//    	return this.verseTemplate.lyrics(number);
-    	this.verseTemplate.setNumber(number);
-    	return verseTemplate.lyrics();
+    	return verseTemplate.lyrics(number);
     }
 }

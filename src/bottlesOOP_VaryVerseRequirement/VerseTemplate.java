@@ -6,4 +6,7 @@ public interface VerseTemplate {
 	public void setNumber(int number);
 	
 	public String lyrics();
+	
+	public String lyrics(int number);
+
 }
