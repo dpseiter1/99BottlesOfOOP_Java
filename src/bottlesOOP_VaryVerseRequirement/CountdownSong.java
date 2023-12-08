@@ -1,17 +1,22 @@
 package bottlesOOP_VaryVerseRequirement;
 
-public class Bottles {
+public class CountdownSong {
 	private VerseTemplate verseTemplate = new BottleVerse(99); // = new VerseTemplate(99);
-	
-	public Bottles() {
-	}
-	
-	public Bottles(VerseTemplate verseTemplate) {
+	int max = 999999;
+	int min = 0;
+
+	public CountdownSong(VerseTemplate verseTemplate) {
 		this.verseTemplate = verseTemplate;	
 	}
 	
+	public CountdownSong(VerseTemplate verseTemplate, int max, int min) {
+		this.verseTemplate = verseTemplate;	
+		this.max = max;
+		this.min = min;
+	}
+	
     public String song() {
-        return this.verses(99, 0);
+        return this.verses(max, min); // changed from 99 when apparent songs may not always have 100 verses
     }
 
     public String verses(int upper, int lower) {

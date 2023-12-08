@@ -5,8 +5,9 @@ import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-	BottlesTest.class,
-	BottleVerseTest.class
+//	BottlesTest.class,
+	BottleVerseTest.class,
+	VerseTest.class
 })
 
 public class BottlesTestSuite {
